@@ -43,7 +43,6 @@ module "group" {
 | group\_name | The name of the group | `string` | n/a | yes |
 | group\_path | The path of the group | `string` | n/a | yes |
 | auto\_devops\_enabled | Default to Auto DevOps pipeline for all projects within this group | `bool` | `false` | no |
-| avatar | A local path to the avatar image to upload | `string` | `null` | no |
 | default\_branch\_protection | See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection | `number` | `2` | yes |
 | description | The description of the group | `string` | `null` | no |
 | emails\_disabled | Disable email notifications | `bool` | `false` | no |
