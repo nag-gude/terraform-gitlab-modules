@@ -35,7 +35,6 @@ module "example" {
   branch                       = "BranchProtected"
   push_access_level            = "developer"
   merge_access_level           = "maintainer"
-  unprotect_access_level       = "no one"
   allow_force_push             = true
   code_owner_approval_required = true
 }
