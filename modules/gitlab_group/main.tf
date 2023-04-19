@@ -15,10 +15,8 @@ resource "gitlab_group" "group" {
   visibility_level                   = var.visibility_level
   membership_lock                    = var.membership_lock
   prevent_forking_outside_group      = var.prevent_forking_outside_group
-  #avatar_hash                        = filesha256(var.avatar)
-  #avatar                             = var.avatar
-  #require_two_factor_authentication  = var.require_two_factor_authentication
-  #two_factor_grace_period            = var.two_factor_grace_period
-  #extra_shared_runners_minutes_limit = var.extra_shared_runners_minutes_limit
-  #shared_runners_minutes_limit       = var.shared_runners_minutes_limit
+  require_two_factor_authentication  = var.require_two_factor_authentication
+  two_factor_grace_period            = var.two_factor_grace_period
+  extra_shared_runners_minutes_limit = var.extra_shared_runners_minutes_limit
+  shared_runners_minutes_limit       = var.shared_runners_minutes_limit
 }
