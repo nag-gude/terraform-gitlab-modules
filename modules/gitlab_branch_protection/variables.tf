@@ -33,12 +33,6 @@ variable "push_access_level" {
   default     = "maintainer"
 }
 
-variable "unprotect_access_level" {
-  type        = string
-  description = "Access levels allowed to unprotect. Valid values are: `developer`, `maintainer`, `no one`"
-  default     = "no one"
-}
-
 variable "allowed_to_merge" {
   type        = list(number)
   description = "The ID of a GitLab user allowed to perform the merge action. Mutually exclusive with group_id."
