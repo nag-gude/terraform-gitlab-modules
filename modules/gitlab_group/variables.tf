@@ -14,12 +14,6 @@ variable "auto_devops_enabled" {
   default     = false
 }
 
-variable "avatar" {
-  type        = string
-  description = "A local path to the avatar image to upload."
-  default     = null
-}
-
 variable "default_branch_protection" {
   type        = number
   description = "Defaults to 2. See https://docs.gitlab.com/ee/api/groups.html#options-for-default_branch_protection"
